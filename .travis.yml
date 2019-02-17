@@ -22,10 +22,10 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "docker-react"
-  env: "DockerReact-env"
+  app: "multi-docker"
+  env: "MultiDocker-env"
   bucket_name: "elasticbeanstalk-us-east-2-378016556164"
-  bucket_path: "docker-react"
+  bucket_path: "multi-docker"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
